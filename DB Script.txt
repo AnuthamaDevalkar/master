@@ -1,0 +1,4 @@
+create table trade_table(tradeId varchar(10) not null, tradeVersion int not null, 
+                          counterPartyId varchar(10), bookId varchar(10),
+                          maturityDate date, createdDate date default sysdate not null, expire varchar(1),
+                         CONSTRAINT PK_trade PRIMARY KEY (tradeId,tradeVersion));
